@@ -84,6 +84,15 @@ body {
 }
 
 .alert{
+	background-color: blue;
+	color: white;
+}
+
+img{
+	position: relative;
+	float: right;
+	border: 3px solid blue;
+	margin: 5px;
 }
 
 #content a:hover{
