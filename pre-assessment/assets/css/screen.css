@@ -84,9 +84,11 @@ body {
 }
 
 .alert{
-    background: red;
 }
 
+#content a:hover{
+	background-color: purple;
+}
 
 h2,h3,h4{
     color: blue;
