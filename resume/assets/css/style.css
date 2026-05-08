@@ -1,9 +1,9 @@
 /* CSS Custom Properties */
 
 :root{
-  --main-bg-color: #efefef;
-  --primary-type-color: #222222;
-  --accent-color-1: #999999;
+  --main-bg-color: #ffffff;
+  --primary-type-color: #3C338F;
+  --accent-color-1: #000000;
 }
 
 
@@ -32,7 +32,7 @@ html {
 
 /* ------ Typography -------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bookman Old Style", sans-serif;
 }
 
 /* ------ Fluid Images -------*/
@@ -45,13 +45,13 @@ img {
 
 .container {
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(60, 51, 143, 0.15);
 }
 
 /* ------ Global Styles -------*/
 body {
   background: var(--main-bg-color);
-  color: var(--primary-type-color);
+  color: var(--accent-color-1);
   line-height: 1.6;
 }
 
@@ -81,13 +81,13 @@ nav a:link, nav a:visited {
   color: var(--primary-type-color);
   text-transform: uppercase;
   font-size: 0.75em;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(60, 51, 143, 0.65);
   transition: background-color 0.5s ease;
   color: #ffffff;
 }
 
 nav a:hover {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(60, 51, 143, 0.95);
 }
 
 main {
@@ -101,6 +101,7 @@ main h1 {
   text-align: center;
   font-weight: 400;
   font-variant: small-caps;
+  color: (var(--primary-type-color));
 }
 main h1:before,
 main h1:after {
@@ -118,10 +119,21 @@ main h1:after {
   margin-left: 15px;
 }
 
+main h2 {
+  font-weight: 400;
+  font-variant: small-caps;  
+  color: var(--primary-type-color);
+  margin-top: 0;
+}
+
+main h3 {
+  color: var(--primary-type-color);
+  margin-top: 0;
+}
+
 dl {
   font-size:.8rem;
   display: grid;
-  /*shorthand*/
   grid-template: repeat(8, 50px) / 8em 1fr;
 }
 
@@ -199,7 +211,6 @@ footer {
 }
 
 
-/* Reorder Source Using Grid */
 main.container {
   display: grid;
   grid-template-areas:
@@ -228,7 +239,7 @@ main.container {
   grid-area: education;
 }
 
-/* Media Queries */
+/* --- Media Queries --- */
 
 @media screen and (min-width:768px){
   
