@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Implementation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        h1 { color: #333; }
+        code { background: #eee; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Responsive Image Demo</h1>
+        <p>This image will swap between 480px, 800px, and the Original size based on your screen width.</p>
+
+        <img 
+            srcset="assets/img/Cat_small.webp 480w,
+                    assets/img/Cat_medium.webp 800w,
+                    assets/img/Cat_large.webp 1200w"
+            sizes="(max-width: 600px) 480px,
+                   (max-width: 1000px) 800px,
+                   1200px"
+            src="assets/img/Cat_large.webp" 
+            alt="A cute, comfortable cat."
+            loading="lazy">
+
+    </div>
+
+</body>
+</html>
